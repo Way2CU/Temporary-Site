@@ -128,11 +128,11 @@ form label:before {
 }
 
 form label:nth-of-type(2):before {
-    background-position: -70px 0px;
+    background-position: -20px 0px;
 }
 
 form label:nth-of-type(3):before {
-    background-position: -20px 0px;
+    background-position: -70px 0px;
 }
 
 form label input {
