@@ -7,9 +7,42 @@
 			<title><cms:text constant="site_title"/></title>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
-
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<img
+				src="_BASEURL.'/site/images/cat-logo.svg'"
+				alt="Way2cu Logo"
+				id="logo"
+				cms:eval="src"
+			/>
+			<cms:module
+				name="articles"
+				action="show"
+				text_id="top"
+			/>
+			<span>
+				<cms:text constant="visit"/>
+			</span>
+			<a
+				 href="http://callbox.co.il"
+			>
+				<cms:svg file="../images/callbox-logo.svg"/>
+			</a>
+			<div id="form">
+				<p>
+					<cms:text constant="contact_us"/>
+				</p>
+				<cms:module
+					name="contact_form"
+					action="show"
+					text_id="contact_form"
+					/>
+				<span>
+					<cms:text constant="address"/>
+				</span>
+				<span>
+					<cms:text constant="phone"/>
+				</span>
+			</div>
 		</body>
 	</html>
 </document>
