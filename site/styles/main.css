@@ -1,12 +1,27 @@
 /**
  * Main Style Sheet
- * Site Name
+ * Way2cu Temporary Site
  *
  * Copyright (c) 2015. by Way2CU, http://way2cu.com
- * Authors:
+ * Authors: Eyal Gershon
  */
 
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 100;
+	src: url(../images/fonts/opensanshebrew-light-webfont.woff) ;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../images/fonts/opensanshebrew-regular-webfont.woff) ;
+}
+
 body {
+	font-family: 'Open Sans', helvetica;
 	background-color: white;
 	color: black;
 }
